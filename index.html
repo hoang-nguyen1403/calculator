@@ -1,44 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
+<div class="container center">
+    <div class="row">
+        <div class="col">
+            <div class="row dark_green_color">Bill</div>
+            <div class="row">
+                <div class="input-group width_edit_label custom_label">
+                    <div class="">
+                        <img src="images/icon-dollar.svg" class="input-group-text custom_label">
+                    </div>
+                    <input type="text" class="form-control text-right custom_label"
+                           aria-label="Amount (to the nearest dollar)">
+                </div>
+            </div>
+            <div class="row">Select Tip %</div>
+            <div class="row">
+                <div class="col edit_margin">
+                    <button type="button" class="btn btn-dark btn-lg sale_button dark_green "> 5%</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark btn-lg sale_button dark_green"> 10%</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark btn-lg sale_button light_green"> 15%</button>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col edit_margin">
+                    <button type="button" class="btn btn-dark btn-lg sale_button dark_green "> 25%</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark btn-lg sale_button dark_green"> 50%</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-dark btn-lg sale_button btn-outline-dark outlight_green">
+                        Custom
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                Number of People
+            </div>
+            <div class="row">
+                <div class="input-group width_edit_label custom_label">
+                    <div class="">
+                        <img src="images/icon-person.svg" class="input-group-text custom_label">
+                    </div>
+                    <input type="text" class="form-control text-right custom_label"
+                           aria-label="Amount (to the nearest dollar)">
+                </div>
+            </div>
 
-  Bill
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        </div>
+        <div class="col right">
+            <div class="row">
+                <div class="col">
+                    <div class="row light_color">Tip Amount</div>
+                    <div class="row light_color">/person</div>
+                </div>
+                <div class="col">
+                    <div class="input-group width_edit_label custom_label_right">
+                        <div class="align_img">
+                            <img src="images/icon-dollar.svg" class="input-group-text custom_label_right ">
+                        </div>
+                        <input type="text" class="form-control text-left custom_label_right"
+                               aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row light_color">Total</div>
+                    <div class="row light_color">/person</div>
+                </div>
+                <div class="col">
+                    <div class="input-group width_edit_label custom_label_right">
+                        <div class="align_img">
+                            <img src="images/icon-dollar.svg" class="input-group-text custom_label_right ">
+                        </div>
+                        <input type="text" class="form-control text-left custom_label_right"
+                               aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <button type="button" class="btn btn-dark btn-lg sale_button light_green"> RESET</button>
+            </div>
+            <div class="row"></div>
+        </div>
 
-  Number of People
+    </div>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,77 @@
+body{
+    background-color: rgba(197,228,231,255);
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Molengo', sans-serif;
+
+;
+}
+
+.row{
+    margin: 3% 0;
+}
+
+.dark_green_color{
+    color: rgba(0,71,75,255);
+    font-size: large;
+    font-weight: bolder;
+}
+
+.right{
+    background-color: rgba(0,71,75,255);
+    border-radius: 15px;
+    margin: 2% 2%;
+}
+
+.dark_green{
+    background-color:rgba(0,71,75,255);
+}
+.light_green{
+    background-color:  rgb(58,183,167);
+    color:  rgba(0,71,75,255);
+;
+}
+.outlight_green{
+    border: 1px solid rgba(0,71,75,255);
+    color:  rgba(0,71,75,255);
+    font-weight: bolder;
+}
+
+.light_color{
+    color: white;
+}
+
+.center{
+    width:60% ;
+    margin: 20% 20%;
+    background-color: rgba(255,255,255,255);
+    border-radius: 20px;
+}
+
+.sale_button{
+    width: 100%;
+}
+
+.edit_margin{
+    padding-left: 0 ;
+}
+.width_edit_label{
+    width: 100%;
+}
+
+.custom_label{
+    background-color : rgba(243,248,251,255);
+    color:  rgba(0,71,75,255) ;
+    border: rgba(243,248,251,255) solid 1px ;
+}
+
+.custom_label_right{
+    background-color : rgba(0,71,75,255);
+    color:   rgb(58,183,167) ;
+    border: rgba(0,71,75,255)solid 1px ;
+    font-size: xx-large;
+
+}
+.align_img{
+    margin: 11% 10% 0 0;
+}
